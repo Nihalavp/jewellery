@@ -1,0 +1,601 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          background-image: url(https://www.naturaldiamonds.com/wp-content/uploads/2020/12/MAZ_EPD_MSH_Graff_Briolette-Cut-Blue-Diamond-Necklace_-IMG_16x9-3200x1800.jpg);
+          
+        }
+        
+       
+        navbar{
+width:10px;
+height:15VH;
+margin:auto;
+display:flex;
+align-items:center;
+}
+nav ul {
+  list-style-type: verdana;
+  padding: 0;
+
+}
+nav{
+flex:1;
+padding-left:60PX;
+}
+nav ul li{
+display:inline-block;
+list-style:none;
+margin:0px 20px;
+}
+nav ul li a{
+text-decoration:none;
+color:white;
+
+}
+nav ul li a:hover{
+text-decoration:solid;
+color:rgb(15, 12, 12);
+
+}
+/* 
+   
+    color: var(--bs-body-color);
+    font-weight: var(--bs-body-font-weight);
+    text-align: var(--bs-body-text-align);
+    font-size: 20px;
+    line-height: 30px;
+    box-sizing: border-box;
+    border: none;
+    font-family: Nunito Sans,sans-serif!important;
+    list-style: none!important;
+    margin: 0;
+    outline: none!important;
+    padding: 0;
+    text-decoration: none!important;
+    position: relative;
+    margin-bottom: 3.75em;
+    margin-top: 0 !important;
+} */
+    div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  
+  
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  display:inline-table;
+}
+.img1{
+    width: 60%;
+  height: 50%;
+  display:inline-table;
+}
+
+.img2{
+    width: 40%;
+  height: 25%;
+  
+}
+
+
+.column {
+  float:left;
+  width: 20%;
+  padding: 1px;
+  height: 24%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display:flex;
+
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+h1{
+  font-style: italic;
+  text-align: center;
+}
+h2{
+  text-align: center;
+
+}
+
+
+
+.item_section .item_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.item_section .item_container .box {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 10px;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.15);
+}
+
+.item_section .item_container .box .img-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item_section .item_container .box .img-box img {
+  width: 125px;
+}
+
+.item_section .item_container .box h6 {
+  color: #fbb534;
+  text-transform: uppercase;
+}
+
+.item_section .item_container .box h5 {
+  text-transform: uppercase;
+}
+
+.item_section .item_container .box:hover {
+  -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+}
+
+.about_section {
+  position: relative;
+}
+
+.about_section .design-box {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 75px;
+}
+
+.about_section .design-box img {
+  width: 100%;
+}
+
+.about_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_section .detail-box p {
+  margin-top: 35px;
+}
+
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 8px 40px;
+  background-color: #0d0806;
+  border: 1px solid #0d0806;
+  color: #ffffff;
+  border-radius: 0;
+  margin-top: 35px;
+}
+
+.about_section .detail-box a:hover {
+  background-color: transparent;
+  color: #0d0806;
+}
+
+.about_section .img-box img {
+  width: 100%;
+}
+
+.price_section {
+  background-color: #f8f8f8;
+}
+
+.price_section .price_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price_section .price_container .box {
+  min-width: 300px;
+  max-width: 360px;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 35px 10px;
+  padding: 45px 0 25px 0;
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.price_section .price_container .box .img-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price_section .price_container .box .img-box img {
+  width: 150px;
+}
+
+.price_section .price_container .box h6 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.price_section .price_container .box .detail-box h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.price_section .price_container .box .detail-box h5 span {
+  color: #fbb534;
+}
+
+.price_section .price_container .box .detail-box a {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #000000;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 15px;
+}
+
+.price_section .price_container .box:hover a {
+  border-color: #fbb534;
+  color: #fbb534;
+}
+
+.price_section .price_btn {
+  display: inline-block;
+  padding: 8px 40px;
+  background-color: #0d0806;
+  border: 1px solid #0d0806;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.price_section .price_btn:hover {
+  background-color: transparent;
+  color: #0d0806;
+}
+
+.ring_section {
+  text-align: center;
+  position: relative;
+}
+
+.ring_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ring_section .container {
+  -webkit-box-shadow: 0px 0px 56px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 56px 1px rgba(0, 0, 0, 0.08);
+}
+
+.ring_section .design-box {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 75px;
+}
+
+.ring_section .design-box img {
+  width: 100%;
+}
+
+.ring_section .ring_container .detail-box h4 {
+  text-transform: uppercase;
+  color: #fbb534;
+}
+
+.ring_section .ring_container .detail-box a {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #000000;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 15px;
+}
+
+.ring_section .ring_container .img-box img {
+  width: 100%;
+}
+
+
+
+
+</style>
+
+</head>
+<title>jewellery website</title>
+<body text="black">
+<DIV class="navbar">
+<nav><ul>
+<li><A href="home">HOME</A></lii>
+<li><A href="offer">FEATURES </A></li>
+<li><A href="contact">CONTACT</A></li>
+<li><A href="buy">BUY NOW</A></li>
+<li><A href="about">ABOUT</A></li></DIV><HR>
+
+</head>
+<body>
+    <h1>WELCOME TO OUR JEWELLERY...</h1>
+    <div class="div1"><i>jewellery</i>
+        <a target="_blank" href="https://idjewelry.com/media/wysiwyg/rose-gold/rose_gold_jewelry.jpg">
+            <img src="https://idjewelry.com/media/wysiwyg/rose-gold/rose_gold_jewelry.jpg">
+        </a>
+      <div class="desc"><i>
+        
+        "If there was a choice on spending a lot of money on accessories or dresses, I always chose accessories. I think jewelry can change an outfit more than anything else. – Iris Apfel
+
+        "
+        <br>
+        “I like for jewelry to tell a story and to be able to talk about what I’m wearing. That’s more important to me than a name, brand, or label.”
+        -Nikki Reed
+        <br>
+        “Beauty is who you are. Jewelry is simply the icing on the cake.”
+-Misty Burgess</i>
+        </div>
+      </div>
+          
+
+<div class="row"><h2>pick your desire!!!</h2>
+        <nav><ul>
+<div class="column">
+          <LI><A href="allproduct">
+            <img src="https://static.connect2india.com/c2icd/product_resources/images/fancy-ladies-earrings.jpg" width="200px" height="200px">
+        </A></LI>
+        <div class="desc">earings</div>
+</div>
+          <div class="column">
+          <LI><A href="allproduct">
+<img src="https://m.media-amazon.com/images/I/51qOgoy-W0L._UL1001_.jpg" height="200px" width="200px">
+          
+<div class="desc">necklace</div>
+</div>
+          </A></LI>
+          <div class="column">
+          <LI><A href="allproduct">
+            <img src="https://kinclimg4.bluestone.com/f_jpg,c_scale,w_515,b_rgb:f0f0f0/giproduct/BENS0737R18_RAA18DIG6XXXXXXXX_ABCD00-PICS-00001-1024-53541.png" width="200px" height="200px">
+          </A></LI>
+          <div class="desc">rings</div>
+          </div>
+          <div class="column">
+          <LI><A href="allproduct">
+            <img src="https://m.media-amazon.com/images/I/6147f2lRnJL.jpg" height="200px" width="200px">
+          </A></LI>
+          <div class="desc">bangles</div>
+          </div>
+          <div class="column">
+          <LI><A href="allproduct">
+            <img src="https://sc04.alicdn.com/kf/H7e29c906cf6c496dacb9888b298023bdn.jpg" height="200px" width="200px">
+          </A></LI>
+        <div class="desc">foot jewellery</div>
+        </DIV>
+          
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+       <div class="row"><h2>Top offers!</h2>
+        <div class="column"> 
+
+<a href="allproduct">
+
+          <img src="https://cdn5.vectorstock.com/i/1000x1000/34/59/premium-jewelry-style-sale-banner-template-vector-19833459.jpg" height="400px" width="400px">
+       &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </a></div>
+        <div class="column">
+
+<a href="allproduct">
+          <img src="https://i.pinimg.com/originals/1a/b3/13/1ab313d5d7f66ea8ecfad6fb9a59ff4a.png" height="400px" width="400px">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+</a>  </div>
+        <div class="column">
+
+          <a href="allproduct">
+          <img src="https://i.pinimg.com/originals/a4/22/05/a42205f1ebb1d965f91177250f0766ff.jpg" height="400px" width="400px">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          </a> </div>
+
+        <div class="column">
+          <a href="allproduct">
+        <img src="https://d168jcr2cillca.cloudfront.net/uploadimages/coupons/13365-Chawla-Jewellers_Delhi_Sales_6.png" height="400px" width="400px">
+          </a></div>
+
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <section class="price_section layout_padding">
+            <div class="container">
+              <div class="heading_container">
+                <h2>
+                  Our Jewellery Price
+                </h2>
+              </div>
+              <div class="price_container">
+                <div class="box">
+                  <div class="name">
+                    <h6>
+                      Diamond Ring
+                    </h6>
+                  </div>
+                  <div class="img-box">
+                    <img src="https://4.imimg.com/data4/XB/YL/MY-26801220/0-500x500.jpg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      $<span>1000.00</span>
+                    </h5>
+                    <a href="buy">
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="name">
+                    <h6>
+                      Diamond Ring
+                    </h6>
+                  </div>
+                  <div class="img-box">
+                    <img src="https://5.imimg.com/data5/TR/UU/MY-7950577/gold-diamond-ring-500x500.jpg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      $<span>1000.00</span>
+                    </h5>
+                    <a href="buy">
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="name">
+                    <h6>
+                      Diamond Ring
+                    </h6>
+                  </div>
+                  <div class="img-box">
+                    <img src="https://staticimg.titan.co.in/Tanishq/Catalog/502213FOSAA02_1.jpg" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h5>
+                      $<span>1000.00</span>
+                    </h5>
+                    <a href="buy">
+                      Buy Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="" class="price_btn">
+                  See More
+                </a>
+              </div>
+            </div>
+          </section>
+        
+          
+        
+          <section class="ring_section layout_padding">
+            <div class="design-box">
+              <img src="https://www.billhicksjewellery.com.au/wp-content/uploads/2022/08/Engagement-rings.jpg" alt="">
+            </div>
+            <div class="container">
+              <div class="ring_container layout_padding2">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="detail-box">
+                      <h4>
+                        special
+                      </h4>
+                      <h2>
+                        Wedding Ring
+                      </h2>
+                      <a href="buy">
+                        Buy Now
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7">
+                    <div class="img-box">
+                      <img src="https://www.billhicksjewellery.com.au/wp-content/uploads/2022/08/Engagement-rings.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        <br>
+
+
+        <br>
+        <img src="{% static 'images\5-Hande-Ercel-studied-in-the-Department-of-Traditional-Turkish-Arts-1.png'%" alt="pic">
+</body></html>

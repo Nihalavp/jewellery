@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-image: url();
+        }
+        navbar{
+        width:10px;
+        height:15VH;
+        margin:auto;
+        display:flex;
+        align-items:center;
+        }
+        nav ul {
+          list-style-type: verdana;
+          padding: 0;
+        
+        }
+        nav{
+        flex:1;
+        padding-left:60PX;
+        }
+        nav ul li{
+        display:inline-block;
+        list-style:none;
+        margin:0px 20px;
+        }
+        nav ul li a{
+        text-decoration:none;
+        color:rgb(12, 6, 6);
+        
+        }
+        nav ul li a:hover{
+        text-decoration:solid;
+        color:rgb(167, 147, 147);
+        }
+
+
+
+
+
+
+        .item_section .item_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.item_section .item_container .box {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 10px;
+  padding: 15px;
+  -webkit-box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 2px 0.5px rgba(0, 0, 0, 0.15);
+}
+
+.item_section .item_container .box .img-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item_section .item_container .box .img-box img {
+  width: 125px;
+}
+
+.item_section .item_container .box h6 {
+  color: #fbb534;
+  text-transform: uppercase;
+}
+
+.item_section .item_container .box h5 {
+  text-transform: uppercase;
+}
+
+.item_section .item_container .box:hover {
+  -webkit-box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.1);
+}
+
+.about_section {
+  position: relative;
+}
+
+.about_section .design-box {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 75px;
+}
+
+.about_section .design-box img {
+  width: 100%;
+}
+
+.about_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_section .detail-box p {
+  margin-top: 35px;
+}
+
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 8px 40px;
+  background-color: #0d0806;
+  border: 1px solid #0d0806;
+  color: #ffffff;
+  border-radius: 0;
+  margin-top: 35px;
+}
+
+.about_section .detail-box a:hover {
+  background-color: transparent;
+  color: #0d0806;
+}
+
+.about_section .img-box img {
+  width: 100%;
+}
+
+.price_section {
+  background-color: #f8f8f8;
+}
+
+.price_section .price_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price_section .price_container .box {
+  min-width: 300px;
+  max-width: 360px;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 35px 10px;
+  padding: 45px 0 25px 0;
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.price_section .price_container .box .img-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price_section .price_container .box .img-box img {
+  width: 150px;
+}
+
+.price_section .price_container .box h6 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.price_section .price_container .box .detail-box h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.price_section .price_container .box .detail-box h5 span {
+  color: #fbb534;
+}
+
+.price_section .price_container .box .detail-box a {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #000000;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 15px;
+}
+
+.price_section .price_container .box:hover a {
+  border-color: #fbb534;
+  color: #fbb534;
+}
+
+.price_section .price_btn {
+  display: inline-block;
+  padding: 8px 40px;
+  background-color: #0d0806;
+  border: 1px solid #0d0806;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.price_section .price_btn:hover {
+  background-color: transparent;
+  color: #0d0806;
+}
+
+.ring_section {
+  text-align: center;
+  position: relative;
+}
+
+.ring_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ring_section .container {
+  -webkit-box-shadow: 0px 0px 56px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 56px 1px rgba(0, 0, 0, 0.08);
+}
+
+.ring_section .design-box {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 75px;
+}
+
+.ring_section .design-box img {
+  width: 100%;
+}
+
+.ring_section .ring_container .detail-box h4 {
+  text-transform: uppercase;
+  color: #fbb534;
+}
+
+.ring_section .ring_container .detail-box a {
+  display: inline-block;
+  padding: 5px 15px;
+  border: 1px solid #000000;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 15px;
+}
+
+.ring_section .ring_container .img-box img {
+  width: 100%;
+}
+
+
+
+
+
+
+ </style>       
+</head>
+<DIV class="navbar">
+    <nav><ul>
+    <LI><A href="home">HOME</A></LI>
+    <LI><A href="offer">FEATURES </A></LI>
+    <LI><A href="contact">CONTACT</A></LI>
+    <LI><A href="buy">BUY NOW</A></LI>
+    <LI><A href="about">ABOUT</A></LI></DIV><HR>
+    
+<body>
+        
+  <div class="item_section layout_padding2">
+    <div class="container">
+      <div class="item_container">
+        <div class="box">
+          <div class="price">
+            <h6>
+              Best PRICE
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://www.gemonediamond.com/wp-content/uploads/2018/08/1-1.jpg" alt="">
+          </div>
+          <div class="name">
+            <h5>
+              Bracelet
+            </h5>
+          </div>
+        </div>
+        <div class="box">
+          <div class="price">
+            <h6>
+              Best PRICE
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://st.depositphotos.com/1062624/4042/i/950/depositphotos_40421567-stock-photo-the-best-engagement-ring.jpg" alt="">
+          </div>
+          <div class="name">
+            <h5>
+              Ring
+            </h5>
+          </div>
+        </div>
+        <div class="box">
+          <div class="price">
+            <h6>
+              Best PRICE
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1000,quality=75,format=auto/in-resources/d7048855-742a-406c-a67d-5c2962e69e5e/Images/ProductImages/Source/DIDE0100_1Y.jpg" alt="">
+          </div>
+          <div class="name">
+            <h5>
+              Earings
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <section class="price_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Our Jewellery Price
+        </h2>
+      </div>
+      <div class="price_container">
+        <div class="box">
+          <div class="name">
+            <h6>
+              Diamond Ring
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://4.imimg.com/data4/XB/YL/MY-26801220/0-500x500.jpg" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              $<span>1000.00</span>
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="name">
+            <h6>
+              Diamond Ring
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://5.imimg.com/data5/TR/UU/MY-7950577/gold-diamond-ring-500x500.jpg" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              $<span>1000.00</span>
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="name">
+            <h6>
+              Diamond Ring
+            </h6>
+          </div>
+          <div class="img-box">
+            <img src="https://staticimg.titan.co.in/Tanishq/Catalog/502213FOSAA02_1.jpg" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              $<span>1000.00</span>
+            </h5>
+            <a href="">
+              Buy Now
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="" class="price_btn">
+          See More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+
+</body>
+</html>
